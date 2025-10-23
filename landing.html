@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klaim Hadiah Spesial!</title>
+
+    <meta http-equiv="refresh" content="5; URL=https://fachry324747.github.io/Situs-Rahasia/opo.html">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000d1a; /* Biru gelap elegan */
+            color: #ffffff;
+            text-align: center;
+        }
+        .container {
+            padding: 40px;
+            background-color: #1a293a;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 191, 255, 0.5); /* Efek cahaya biru */
+            max-width: 90%;
+            border: 3px solid #00bfff;
+        }
+        h1 {
+            color: #ffc400; /* Emas cerah */
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            animation: pulse 1.5s infinite;
+        }
+        p {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+        }
+        .countdown {
+            font-size: 1.8em;
+            color: #00bfff;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PEMBERITAHUAN EKSKLUSIF!</h1>
+        <p>Anda adalah salah satu dari 100 orang yang dipilih untuk melihat konten rahasia.</p>
+        <p>Bersiaplah untuk diklaim...</p>
+        
+        <div class="countdown">
+            Mengalihkan dalam <span id="timer">5</span> detik...
+        </div>
+    </div>
+
+    <script>
+        // Skrip untuk menampilkan hitungan mundur
+        let count = 5;
+        const timerElement = document.getElementById('timer');
+
+        const countdownInterval = setInterval(() => {
+            count--;
+            timerElement.textContent = count;
+            
+            if (count <= 0) {
+                clearInterval(countdownInterval);
+                // Pengalihan akan dilakukan oleh Meta Tag, tapi ini sebagai fallback/kepastian
+                // window.location.href = 'https://fachry324747.github.io/Situs-Rahasia/opo.html';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
